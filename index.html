@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <h2 class="groupe">Выбор предмета</h2>
+    <div class="positionListGroup">
+      <ul class="listGroup">
+        <li class="listItem"><a href="groups/index.html">Основы управления работой веб-ресурсов</a></li>
+        <li class="listItem"><a href="group2">Работа в системе управления контентом</a></li>
+        <li class="listItem"><a href="group3">Оптимизация веб-приложений</a></li>
+        <li class="listItem"><a href="group3">Обеспечение безопасности веб-приложений</a></li>
+        <li class="listItem"><a href="group3">Проектирование и разработка вебприложений</a></li>
+        <li class="listItem"><a href="group3">Практика. Веб-разработка</a></li>
+      </ul>
+    </div>
+    <h2 class="addGroup">Добавить предмет</h2>
+    <div class="addGroupeInputButton">
+      <input class="addGroupeInput" type="text" />
+      <button class="addGroupButton">Добавить</button>
+    </div>
+    <script>
+      document
+        .getElementById("linkSelect")
+        .addEventListener("change", function () {
+          var selectedValue = this.value;
+          if (selectedValue) {
+            window.location.href = selectedValue;
+          }
+        });
+    </script>
+  </body>
+</html>

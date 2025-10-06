@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font: 16px 'Montserrat', sans-serif;
+    background-color: rgb(240, 244, 248);
+}
+
+h1 {
+    color: #0056b3;
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.groupe {
+    text-align: center;
+    color: #0056b3;
+    margin-top: 30px;
+    font-size: 20px;    
+}
+
+.addGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: #0056b3;
+    font-size: 20px;
+}
+
+.addGroupButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+}
+
+.addGroupButton:hover {
+    background-color: #0056b3;
+}
+
+.addGroupeInputButton {
+    text-align: center;
+}
+
+.addGroupeInput {
+    padding: 5px;
+    margin: 0px 0px 2px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+}
+
+.addGroupeInput:focus {
+    border: 1px solid #0056b3;
+    outline: none;
+}
+
+
+
+.positionListGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listGroup {
+    color: #0056b3;
+    display: inline;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+} 
+
+/* @media (max-width: 600px) {
+    .listGroup {
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+        width: 60%;
+    } 
+} */
+
+.listItem {
+    padding: 20% 10%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listItem>a {
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+
+
+.studentList {
+    padding: 0;
+    margin: 30px;
+    color: #0056b3;
+}
+
+.deleteStudent {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: auto;
+    height: auto;
+    
+    
+}
+
+.liStudents {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editStudent {
+    background-color: #04d827;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 5px;
+}
+
+.flexButtonsStudents {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+header>a {
+    text-decoration: none;
+    color: #022852;
+    font-size: 15px;
+    margin: 20px;
+    font-size: bold;  
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tableStudentsExercise {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tdHeaderExercise{
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tableStudentsExercise td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    text-align: center;
+}
+
+td select {
+    padding: 2px 5px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+}
+
+td select:hover {
+    border: 1px solid #007bff;
+}
+
+td select:focus {
+    border: 1px solid #0056b3;
+    outline: none;
+
+}
+
+.inputPercent {
+    padding: 5px;
+    margin: 0px 0px 2px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+}
+
+
+.tableAssessmentSystem {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tdAssessmentSystem{
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tableAssessmentSystem td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.trAssessmentSystem:hover {
+    background-color: #e9f5ff;
+}
+
+.inputPercent {
+    padding: 5px;
+    margin: 0px 0px 2px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.inputPercent:focus {
+    border: 1px solid #0056b3;
+    outline: none;
+}
+
+.inputPercent:hover {
+    border: 1px solid #007bff;
+}
+
+.assessmentFinalList {
+    padding: 0;
+    margin: 30px;
+    color: #0056b3;
+    width: 50%;
+    list-style: none;
+    margin: 30px auto;
+}
+
+.liAssessmentFinal {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.liAssessmentFinal li {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.liAssessmentFinal p {
+    flex-grow: 0;
+    text-align: right;
+    font-size: 1.2em;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+

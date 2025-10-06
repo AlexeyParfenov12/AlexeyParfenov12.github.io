@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <h2 class="groupe">Выбор группы</h2>
+    <div class="positionListGroup">
+      <ul class="listGroup">
+        <li class="listItem"><a href="../students/index.html">ИС-421</a></li>
+        <li class="listItem"><a href="group2">ИС-419</a></li>
+        <li class="listItem"><a href="group3">ИС-418</a></li>
+        <li class="listItem"><a href="group3">ОИ-204</a></li>
+        <li class="listItem"><a href="group3">ОИ-203</a></li>
+        <li class="listItem"><a href="group3">Д-233</a></li>
+        <li class="listItem"><a href="group3">Д-322</a></li>
+        <li class="listItem"><a href="group3">Д-321</a></li>
+      </ul>
+    </div>
+    <h2 class="addGroup">Добавить группу</h2>
+    <div class="addGroupeInputButton">
+      <input class="addGroupeInput" type="text" />
+      <button class="addGroupButton">Добавить</button>
+    </div>
+    <script>
+      document
+        .getElementById("linkSelect")
+        .addEventListener("change", function () {
+          var selectedValue = this.value;
+          if (selectedValue) {
+            window.location.href = selectedValue;
+          }
+        });
+    </script>
+  </body>
+</html>
